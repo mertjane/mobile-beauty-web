@@ -1,0 +1,110 @@
+
+.brand, .hero-title, .hero-text, .services-title, .about-us-title{
+    font-family: "PT Serif", serif;
+}
+
+.hero-title {
+    color: #1c1a1d !important;
+    font-weight: 700;
+}
+
+.hero-p{
+    font-size: 1.5rem;
+    color: #1c1a1d !important;
+}
+
+.services-title{
+    color: #1c1a1d !important;
+}
+
+/*** Services Start ***/
+.services .services-item {
+    transition: 0.5s;
+}
+
+.services .services-item:hover {
+    background: #ea580c !important;
+    border-color: #1c1a1d !important;
+}
+
+.services .services-item:hover p,
+.services .services-item:hover .services-title {
+    color: #fff !important;
+    transition: 0.5s;
+}
+
+.services .services-item:hover a {
+    background: #fff !important;
+    color: #1c1a1d !important;
+}
+
+
+.services .services-item .services-img {
+    overflow: hidden;
+}
+
+.services .services-item img {
+    transition: 0.5s;
+}
+
+.services .services-item img:hover {
+    transform: scale(1.3);
+}
+/*** Services End ***/
+
+
+/*** About Us Start ***/
+
+.btn-play:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #ea580c !important;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.btn-play span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #fff;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+}
+
+.btn-play:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #ea580c ;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
